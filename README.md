@@ -1,2 +1,2 @@
 # M1_Quiz_Game
-simple games in c
+Simple Quiz game with score tracking in c
