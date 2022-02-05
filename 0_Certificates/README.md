@@ -1,2 +1,2 @@
-Sololearn
-NDG linux - cisco
+#Sololearn
+##NDG linux - cisco
