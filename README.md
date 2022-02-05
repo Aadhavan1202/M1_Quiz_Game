@@ -1,2 +1,2 @@
-# M1_ENTERTAINMENT_GAME
+# M1_Quiz_Game
 simple games in c
