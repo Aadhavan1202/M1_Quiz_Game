@@ -1,2 +1,0 @@
-#Sololearn
-##NDG linux - cisco
