@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<ctype.h>
 #include<stdlib.h>
-#include<string.h>
+//#include<string.h>
 
 
 int main()
@@ -35,7 +35,7 @@ int main()
 
     system("cls");
 
-    printf("\n Welcome %s to C Program Quiz Game-- ",playername);
+    printf("\n Welcome to C Program Quiz Game %s-- ",playername);
     printf("\n\n Here are some tips you might wanna know before playing:\n\n\n");
 
     printf("\n >> There are 2 rounds in this Quiz Game,QUALIFIER round,and CHALLENGER round\n");
@@ -163,6 +163,6 @@ int main()
 	}
 	test:
 	    system("cls");
-	    printf("\n\n\Challenger Round coming soon\n\n");
+	    printf("\n\n\Challenger Round coming soon!!!!\n\n");
     }
 }
