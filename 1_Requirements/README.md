@@ -1,3 +1,4 @@
+
 #Description
 
     *This is a Quiz Game Mini Project in C designed as a simple console application. a number of questions are asked, 
