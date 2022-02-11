@@ -2,6 +2,7 @@
  * @brief header file that declare the functions used in the program
  * 
  */
+#ifndef MENU_H_INCLUDED
 #define MENU_H_INCLUDED
 
 void home();
