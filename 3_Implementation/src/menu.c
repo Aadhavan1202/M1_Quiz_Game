@@ -71,9 +71,9 @@ game:
         getch();
         home();
        }
-       printf("\npress \033[0;31m Y \033[0m  if you want to reset your score:");
+       printf("\n\n\npress \033[0;31m Y \033[0m  if you want to reset your score:");
        if(toupper(getch())=='Y'){
-            printf("\nare you sure you want to reset your score {Y/N} :");
+            printf("\n\n\nare you sure you want to reset your score {Y/N} :");
             if(toupper(getch())=='Y')
             reset_score();
             else
