@@ -31,11 +31,13 @@
 
     
 
-    * What: Phonelog Management
+    * What: Quiz game
 
-    * Where: Industries,Companies
+    * Where: personal devices
 
-    * When: Need for MAnaging
+    * When: For entertainment
 
-    * How: Recieves Data Form the Admin and Gives the List Of Data
+    * Whom: Anyone with a personal digital devices
+
+    * How: asks player pre-defined questions and receive their answers
 
