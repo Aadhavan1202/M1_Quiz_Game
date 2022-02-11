@@ -18,22 +18,15 @@
 ## SWOT
 
     * Strengths: Easy to understand and easy to play.
-
     * Weakness: there are less questions overall.
-
     * Opprtunities: It is a past time game.
-
     * Threats: it is not well sophisticated
 
 ## 4 'W 1 'H
 
     * What: Quiz game
-
     * Where: personal devices
-
     * When: For entertainment
-
     * Whom: Anyone with a personal digital devices
-
     * How: asks player pre-defined questions and receive their answers
 
