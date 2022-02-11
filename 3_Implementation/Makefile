@@ -7,14 +7,14 @@ ifdef OS
    EXEC = exe
 else
    ifeq ($(shell uname), Linux)
-      RM = rm -rf
-      FixPath = $1
-	  EXEC = out
+   RM = rm -rf
+   FixPath = $1
+   EXEC = out
    endif
 endif
 
 Build : $(SRC)
-	gcc $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+   gcc $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
 
 Run : Build
 	./$(call FixPath,$(PROJ_NAME).$(EXEC))
@@ -26,9 +26,9 @@ dynamic_analysis: Build
    valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 coverage:
-	gcc -fprofile-arcs -ftest-coverage $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
-	./$(call FixPath,$(PROJ_NAME).$(EXEC))
-	gcov -a src/project_main.c src/menu.c src/file.c src/help.c  src/quizC.c src/quizCpp.c src/quizJava.c
+   gcc -fprofile-arcs -ftest-coverage $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+   ./$(call FixPath,$(PROJ_NAME).$(EXEC))
+   gcov -a src/project_main.c src/menu.c src/file.c src/help.c  src/quizC.c src/quizCpp.c src/quizJava.c
 
 Clean:
-	$(RM) $(call FixPath,*.out)
+   $(RM) $(call FixPath,*.out)
