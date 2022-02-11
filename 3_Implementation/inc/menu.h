@@ -14,6 +14,6 @@ char ans;
 int score,count,countp,countj;
 void edit_score(float score, char plnm[20]);
 void show_record();
-void reset_score();
+void game();
 
 #endif // MENU_H_INCLUDED

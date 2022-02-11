@@ -23,7 +23,6 @@ void home()
      printf("\n\t > Press \033[0;31m S \033[0m to start the game");
      printf("\n\t > press \033[0;31m H \033[0m for help");
      printf("\n\t > press \033[0;31m W \033[0m to view the highest score");
-     printf("\n\t > press \033[0;31m R \033[0m to reset score");
      printf("\n\t > press \033[0;31m Q \033[0m to quit\n\n\n");
 
      choice=toupper(getch());
@@ -36,20 +35,18 @@ void home()
         show_record();
         home();
 	}
-    else if (choice=='R'){
-        reset_score();
-        printf("Done!!!!");
-        getch();
-        home();
-    }
 	else if (choice=='Q')
         exit(0);
 	else if(choice=='S')
     {
      system("cls");
          printf("Register your name:");
-     gets(playername);
-game:
+     fgets(playername,40,stdin);
+    game();
+    
+    }
+}
+void game(){
     system("cls");
 
      printf("\n\t > Press \033[0;31m A \033[0m for c quiz");
@@ -81,10 +78,9 @@ game:
             else
                 exit(1);
        }
-    }
     printf("\n\ndo you want to play again:y/n\n\n");
     if(toupper(getch())=='Y')
-        goto game;
+        game();
     else{
         edit_score(score,playername);
         exit(0);

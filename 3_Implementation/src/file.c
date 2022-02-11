@@ -11,19 +11,6 @@
 #include <stdio.h>
 #include "menu.h"
 
-void reset_score()
-    {
-    system("cls");
-    float sc;
-	char nm[20];
-	FILE *f;
-	f=fopen("score.txt","r+");
-	fscanf(f,"%s%f",&nm,&sc);
-	sc=0;
-	fprintf(f,"%s,%.2f",nm,sc);
-    fclose(f);
-    }
-
 void show_record()
     {
     system("cls");
@@ -31,7 +18,7 @@ void show_record()
 	float scr;
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%s%f",&name,&scr);
+	fscanf(f,"%20s%20f",&name,&scr);
 	printf("\n\n\t\t %s has secured the Highest Score %0.2f",name,scr);;
 	fclose(f);
 	getch();
@@ -44,7 +31,7 @@ void edit_score(float score, char plnm[20])
 	char nm[20];
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%s%f",&nm,&sc);
+	fscanf(f,"%20s%20f",&nm,&sc);
 	if (score>=sc)
 	  {
 	    sc=score;
