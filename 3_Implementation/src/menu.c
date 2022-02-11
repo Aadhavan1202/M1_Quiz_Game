@@ -9,6 +9,7 @@
  * 
  */
 #include"menu.h"
+#include <ctype.h>
 #include<stdio.h>
 
 
@@ -17,7 +18,7 @@ void home()
 {
     char playername[40];
     char choice;
-     system("cls");
+     //system("cls");
      printf("Welcome to quiz game made with c\n\n");
      printf("\n\t > Press \033[0;31m S \033[0m to start the game");
      printf("\n\t > press \033[0;31m H \033[0m for help");
@@ -25,7 +26,7 @@ void home()
      printf("\n\t > press \033[0;31m R \033[0m to reset score");
      printf("\n\t > press \033[0;31m Q \033[0m to quit\n\n\n");
 
-     choice=toupper(getch());
+     choice=toupper(getc());
 
    if (choice=='H')
 	{
@@ -41,14 +42,14 @@ void home()
         home();
     }
 	else if (choice=='Q')
-        exit(1);
+        exit(0);
 	else if(choice=='S')
     {
-     system("cls");
+     system("clear");
          printf("Register your name:");
      gets(playername);
 game:
-    system("cls");
+    system("clear");
 
      printf("\n\t > Press \033[0;31m A \033[0m for c quiz");
      printf("\n\t > press \033[0;31m B \033[0m for c++ quiz");
@@ -77,7 +78,7 @@ game:
             if(toupper(getch())=='Y')
             reset_score();
             else
-                exit(1);
+                exit(0);
        }
     }
     printf("\n\ndo you want to play again:y/n\n\n");
@@ -85,5 +86,5 @@ game:
         goto game;
     else
         edit_score(score,playername);
-        exit(1);
+        exit(0);
     }

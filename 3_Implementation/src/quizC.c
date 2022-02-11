@@ -8,6 +8,8 @@
  * @copyright Copyright (c) 2022
  * 
  */
+#include <stdlib.h>
+#include <ctype.h>
 #include "menu.h"
 
 int quizC()
@@ -15,7 +17,7 @@ int quizC()
     int count=0;
 
     for(int i=0;i<10;i++){
-        system("cls");
+        //system("clear");
          switch(i)
 		{
 		case 1:

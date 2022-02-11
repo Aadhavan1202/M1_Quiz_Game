@@ -8,7 +8,9 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 #include "menu.h"
 
 

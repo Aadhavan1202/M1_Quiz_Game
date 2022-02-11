@@ -12,7 +12,7 @@
 
 void help()
 	{
-    system("cls");
+    //system("clear");
     printf("\n ......................... C program Quiz Game......................... ");
     printf("\n >> There are three options in the game");
     printf("\n >> You can choose to play C , c++ or in Java");
