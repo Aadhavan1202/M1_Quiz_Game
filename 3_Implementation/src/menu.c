@@ -18,7 +18,7 @@ void home()
 {
     char playername[40];
     char choice;
-     //system("cls");
+     system("cls");
      printf("Welcome to quiz game made with c\n\n");
      printf("\n\t > Press \033[0;31m S \033[0m to start the game");
      printf("\n\t > press \033[0;31m H \033[0m for help");
@@ -26,7 +26,7 @@ void home()
      printf("\n\t > press \033[0;31m R \033[0m to reset score");
      printf("\n\t > press \033[0;31m Q \033[0m to quit\n\n\n");
 
-     choice=toupper(getc());
+     choice=toupper(getch());
 
    if (choice=='H')
 	{
