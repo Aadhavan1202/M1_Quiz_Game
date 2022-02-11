@@ -13,7 +13,7 @@
 
 void reset_score()
     {
-    //system("clear");
+    system("cls");
     float sc;
 	char nm[20];
 	FILE *f;
@@ -26,7 +26,7 @@ void reset_score()
 
 void show_record()
     {
-    //system("clear");
+    system("cls");
 	char name[20];
 	float scr;
 	FILE *f;
@@ -39,7 +39,7 @@ void show_record()
 
 void edit_score(float score, char plnm[20])
 	{
-    //system("clear");
+    system("cls");
 	float sc;
 	char nm[20];
 	FILE *f;

@@ -8,16 +8,18 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include <stdlib.h>
-#include <ctype.h>
 #include "menu.h"
+#include<stdio.h>
+#include <curses.h>
+#include<ctype.h>
+#include<stdlib.h>
 
 int quizC()
 {
     int count=0;
 
     for(int i=0;i<10;i++){
-        //system("clear");
+        system("cls");
          switch(i)
 		{
 		case 1:

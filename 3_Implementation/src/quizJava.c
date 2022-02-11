@@ -9,14 +9,16 @@
  * 
  */
 #include "menu.h"
-#include <ctype.h>
-
+#include<stdio.h>
+#include <curses.h>
+#include<ctype.h>
+#include<stdlib.h>
 
 int quizJava()
 {
     countj=0;
     for(int i=0;i<10;i++){
-       // system("clear");
+        system("cls");
          switch(i)
 		{
 		case 1:

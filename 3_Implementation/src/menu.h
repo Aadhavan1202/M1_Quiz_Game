@@ -6,7 +6,7 @@
 #define MENU_H_INCLUDED
 
 void home();
-int quizc();
+int quizC();
 int quizCpp();
 int quizJava();
 void help();

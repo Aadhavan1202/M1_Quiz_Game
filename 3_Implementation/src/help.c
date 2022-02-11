@@ -9,10 +9,13 @@
  * 
  */
 #include "menu.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<curses.h>
 
 void help()
 	{
-    //system("clear");
+    system("cls");
     printf("\n ......................... C program Quiz Game......................... ");
     printf("\n >> There are three options in the game");
     printf("\n >> You can choose to play C , c++ or in Java");
