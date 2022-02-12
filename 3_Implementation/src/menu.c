@@ -14,10 +14,10 @@
 #include<ctype.h>
 #include<stdlib.h>
 
+char playername[40],choice;
+
 void home()
 {
-    char playername[40];
-    char choice;
      system("cls");
      printf("Welcome to quiz game made with c\n\n");
      printf("\n\t > Press \033[0;31m S \033[0m to start the game");
@@ -70,14 +70,7 @@ void game(){
         getch();
         home();
        }
-       printf("\npress \033[0;31m Y \033[0m  if you want to reset your score:");
-       if(toupper(getch())=='Y'){
-            printf("\nare you sure you want to reset your score {Y/N} :");
-            if(toupper(getch())=='Y')
-            reset_score();
-            else
-                exit(1);
-       }
+
     printf("\n\ndo you want to play again:y/n\n\n");
     if(toupper(getch())=='Y')
         game();
@@ -86,3 +79,4 @@ void game(){
         exit(0);
     }
 }
+
