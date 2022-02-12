@@ -9,6 +9,8 @@
  * 
  */
 #include <stdio.h>
+#include <stdlib.h>
+#include <curses.h>
 #include "menu.h"
 
 void show_record()
@@ -18,7 +20,7 @@ void show_record()
 	float scr;
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%20s%20f",&name,&scr);
+	fscanf(f,"%20s%20f",name,&scr);
 	printf("\n\n\t\t %s has secured the Highest Score %0.2f",name,scr);;
 	fclose(f);
 	getch();
@@ -31,7 +33,7 @@ void edit_score(float score, char plnm[20])
 	char nm[20];
 	FILE *f;
 	f=fopen("score.txt","r");
-	fscanf(f,"%20s%20f",&nm,&sc);
+	fscanf(f,"%20s%20f",nm,&sc);
 	if (score>=sc)
 	  {
 	    sc=score;
